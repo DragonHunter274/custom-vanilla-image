@@ -34,6 +34,13 @@ stages:
       - qemu-system
       - virt-manager
 
+  - name: lookingglass-packages
+    type: apt
+    source:
+      packages:
+      - libxpresent1
+      - libbinutils
+      
   - name: example-commands
     type: shell
     commands:
