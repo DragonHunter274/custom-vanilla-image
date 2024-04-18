@@ -29,6 +29,10 @@ stages:
       - bridge-utils
       - virtinst
       - libvirt-daemon-system
+      - libguestfs-tools
+      - libosinfo-bin
+      - qemu-system
+      - virt-manager
 
   - name: example-commands
     type: shell
