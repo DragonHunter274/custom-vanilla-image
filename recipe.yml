@@ -20,11 +20,15 @@ stages:
 
   # Put your custom actions behind this comment
 
-  - name: example-packages
+  - name: libvirt-packages
     type: apt
     source:
       packages:
-      - vim
+      - qemu-kvm
+      - libvirt-daemon
+      - bridge-utils
+      - virtinst
+      - libvirt-daemon-system
 
   - name: example-commands
     type: shell
